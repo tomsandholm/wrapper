@@ -1,4 +1,0 @@
-#! /bin/bash
-# vi:set nu ai ap aw smd showmatch tabstop=4 shiftwidth=4 expandtab:
-
-echo "global-ping" | su - ansible
