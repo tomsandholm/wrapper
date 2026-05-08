@@ -1,5 +1,9 @@
 # Wrapper Tools
 
+# USE AT YOUR OWN RISK 
+
+# This tool converts a shell script into a SETUID script that is owned by root 
+
 This project provides a collection of shell scripts wrapped into SUID binaries using `shc` (Shell Script Compiler). This allows unprivileged users to execute specific system tasks or switch to the `ansible` user environment without needing to use `sudo` directly for each command.
 
 ## Overview
