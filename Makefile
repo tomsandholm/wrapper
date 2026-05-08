@@ -28,6 +28,20 @@ global-ping:
 	sudo chmod u+s global-ping
 	sudo cp --preserve=mode global-ping /usr/local/bin/global-ping
 
+system-reboot:
+	shc -S -f system-reboot.sh
+	mv system-reboot.sh.x system-reboot
+	sudo chown root:root system-reboot
+	sudo chmod u+s system-reboot
+	sudo cp --preserve=mode system-reboot /usr/local/bin/system-reboot
+
+system-upgrade:
+	shc -S -f system-upgrade.sh
+	mv system-upgrade.sh.x system-upgrade
+	sudo chown root:root system-upgrade
+	sudo chmod u+s system-upgrade
+	sudo cp --preserve=mode system-upgrade /usr/local/bin/system-upgrade
+
 clean:
 	sudo rm global-uptime
 	sudo rm global-diskuse
